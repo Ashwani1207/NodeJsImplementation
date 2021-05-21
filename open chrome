@@ -1,0 +1,4 @@
+let cp=require("child_process");
+console.log("Trying to open our Heart");
+cp.execSync("start chrome https:\\www.pepcoding.com");//"code" for opening vs code
+console.log("Heart opened");
