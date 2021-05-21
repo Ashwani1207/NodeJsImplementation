@@ -1,0 +1,5 @@
+let os=require("os");
+//console.log(os.arch());//type of system 64 bit or 32 bit
+//console.log(os.platform());//window type or mac type
+//console.log(os.networkInterfaces());//to get the networking settings
+console.log(os.cpus());
