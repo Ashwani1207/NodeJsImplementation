@@ -1,0 +1,4 @@
+let chalk=require("chalk");//to color the content
+let figlet=require("figlet");//to enlarge the size in this format
+console.log(chalk.red("HELLO pEPCODING"));
+console.log(chalk.blue(figlet.textSync("#PEPCODERS")));
