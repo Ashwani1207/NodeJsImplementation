@@ -1,0 +1,33 @@
+let fs=require("fs");
+let output=fs.readFileSync("abc.js");
+//console.log("the binary output is: ",output);//gives the buffer of another file
+//console.log("the as it is output is "+output);//just concatenated the aontent of another file
+//fs.openSync("abc.txt","w");//creating a file write mod
+//fs.writeFileSync("abc.txt","bhai ab to khush ho ja Mahadev ne praband kr diya hai rpojects ka");//create new if not exist and write the content else it will overwrite the content
+//fs.appendFileSync("abc.txt","Bhaisaab ab to Mahadev ki kirpa baras rhi hai");
+//fs.mkdirSync("meriDirectory");//made this directory 
+//fs.writeFileSync("meriDirectory/merifile.txt","Bhai abhi bnai hai ye file");//made a file in tis directory
+//let content=fs.readdirSync("meriDirectory");
+//console.log(content);
+//for(let i=0;i<content.length;i++){
+    //console.log("file",content[i],"is removed");
+  //  fs.unlinkSync("meriDirectory/" + content[i]);
+//}
+//fs.rmdirSync("meriDirectory");//remove directory
+//let doespathexist=fs.existsSync("abc.txt");
+//console.log(doespathexist);
+//let dspnexist=fs.existsSync("abcd.txt");
+//console.log(dspnexist);
+//let detailsobj=fs.lstatSync(__dirname+"//filesystem.js");
+//let ans=detailsobj.isFile();//file or not
+//console.log(ans);
+//let an=detailsobj.isDirectory();//dir or not
+//console.log(an);
+for(var i=0;i<=10;i++){
+    let makefolder=`Lecture~ ${i}`;
+    fs.mkdirSync(makefolder);
+    fs.writeFileSync(makefolder+"\\"+"readme.md",`# readme for ${makefolder}`);
+
+}//make multiple folders and put content in them
+
+
